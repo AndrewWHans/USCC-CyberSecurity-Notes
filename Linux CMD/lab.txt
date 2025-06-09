@@ -1,4 +1,5 @@
-# Lab commands used in the Linux Command Line, with Q/A's
+Lab commands used in the Linux Command Line, with Q/A's
+
 Q: How do we look for files that contain a particular string? <br>
 grep -rl sockaddr_in /usr/include
 
@@ -9,7 +10,8 @@ Q: How many files in the pictures dir?
 ls Targets/Pictures/ -> **gives you all the columns of what is within the dir, but if you did:** <br>
 ls Targets/Pictures/ | wc -l -> **give you the n# of files**
 
-# Other Commands used with explanations
+
+Other Commands used with explanations
 
 ls Targets/Pictures/ | cut -d. -f2 | head
 
