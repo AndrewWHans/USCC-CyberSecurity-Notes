@@ -24,3 +24,15 @@ tail allows to start counting by the beginning of the file,
 lab@LAB:~/Exercises$ ls -l $(grep -irl mail /etc 2>/dev/null)
 
 lab@LAB:~/Exercises$ grep -wf <(cut -d: -f3 Targets/passwd | sort | uniq -d) Targets/passwd
+
+lab@LAB:~/Exercises/Targets$ grep -f <(awk '/curl\// {print $1}' access_log-hudak | sort -u) access_log-hudak | grep -v curl/ | awk '{print $1}' | sort -u
+
+# Loops
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | head
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | tail
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | sort -nr -k2,2 | head
