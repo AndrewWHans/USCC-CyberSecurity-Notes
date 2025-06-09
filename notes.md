@@ -22,4 +22,6 @@ lab@LAB:~/Exercises$ ps -ef | tail -n +2 | awk '{print $1}' | sort | uniq -c
 
 tail allows to start counting by the beginning of the file, 
 
+lab@LAB:~/Exercises$ ls -l $(grep -irl mail /etc 2>/dev/null)
+lab@LAB:~/Exercises$ grep -wf <(cut -d: -f3 Targets/passwd | sort | uniq -d) Targets/passwd
 
