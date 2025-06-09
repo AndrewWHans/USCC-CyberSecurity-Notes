@@ -1,4 +1,4 @@
-Lab commands used in the Linux Command Line
+Some of the Lab commands used in the Linux Command Line
 
 Q: How do we look for files that contain a particular string? <br>
 grep -rl sockaddr_in /usr/include
