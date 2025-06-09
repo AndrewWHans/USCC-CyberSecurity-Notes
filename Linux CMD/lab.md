@@ -36,3 +36,9 @@ lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file 
 lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | tail
 
 lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | sort -nr -k2,2 | head
+
+lab@LAB:~/Exercises/Targets$ less passwd
+
+lab@LAB:~/Exercises/Targets$ IFS=: ; cat passwd | while read username x uid gid fullname homedir shell; do<br>
+echo -e $username\\t$uid<br>
+done
