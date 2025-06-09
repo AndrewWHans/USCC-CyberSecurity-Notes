@@ -1,1 +1,0 @@
-Lab commands that were used in the linux command line:
