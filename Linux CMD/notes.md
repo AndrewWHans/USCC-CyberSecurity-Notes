@@ -4,3 +4,4 @@ Unix design philosophy **"Write simple tools, chain them together with pipelines
 
 # References
 [Linux Forensics and CMD guides](https://github.com/AndrewWHans/linux-forensics-command-guides/tree/main/Linux%26CMDline)
+[Hal Pomeranz Linux REPO](https://github.com/halpomeranz/LinuxCmdLine/blob/main/LinuxCmdLine%20-%20AnalystsAndOperators.pdf)
