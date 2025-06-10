@@ -43,4 +43,3 @@ lab@LAB:~/Exercises/Targets$ less passwd
 
 lab@LAB:~/Exercises/Targets$ IFS=: ; cat passwd | while read username x uid gid fullname homedir shell; do<br>
 echo -e $username\\t$uid<br>
-done
