@@ -1,0 +1,45 @@
+Some of the Lab commands used in the Linux Command Line
+
+Q: How do we look for files that contain a particular string? <br>
+grep -rl sockaddr_in /usr/include
+
+**to get the matches:** grep -rl sockaddr_in /usr/include | wc -l <br>
+30
+
+Q: How many files in the pictures dir?
+ls Targets/Pictures/ -> **gives you all the columns of what is within the dir, but if you did:** <br>
+ls Targets/Pictures/ | wc -l -> **give you the n# of files**
+
+
+Other Commands used with explanations
+
+ls Targets/Pictures/ | cut -d. -f2 | head
+
+lab@LAB:~/Exercises$ md5sum Targets/Pictures/* |awk '{print $1}' | sort | uniq -c
+
+lab@LAB:~/Exercises$ ps -ef | tail -n +2 | head
+
+lab@LAB:~/Exercises$ ps -ef | tail -n +2 | awk '{print $1}' | sort | uniq -c
+
+tail allows to start counting by the beginning of the file, 
+
+lab@LAB:~/Exercises$ ls -l $(grep -irl mail /etc 2>/dev/null)
+
+lab@LAB:~/Exercises$ grep -wf <(cut -d: -f3 Targets/passwd | sort | uniq -d) Targets/passwd
+
+lab@LAB:~/Exercises/Targets$ grep -f <(awk '/curl\// {print $1}' access_log-hudak | sort -u) access_log-hudak | grep -v curl/ | awk '{print $1}' | sort -u
+
+# Loops
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | head
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | tail
+
+lab@LAB:/usr/share/man/man8$ for file in *.gz; do echo -ne $file\\t; zcat $file | wc -c; done | sort -nr -k2,2 | head
+
+lab@LAB:~/Exercises/Targets$ less passwd
+
+lab@LAB:~/Exercises/Targets$ IFS=: ; cat passwd | while read username x uid gid fullname homedir shell; do<br>
+echo -e $username\\t$uid<br>
