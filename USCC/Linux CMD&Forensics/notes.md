@@ -11,7 +11,7 @@ ls sudoers.d = attacker gateway for root access
 -u - used to state the website being scanned
 -w - takes a list of words to iterate through to find hidden pages
 
-# References
+### References
 
 [Linux Forensics and CMD guides](https://github.com/AndrewWHans/linux-forensics-command-guides/tree/main/Linux%26CMDline) | 
 [Hal Pomeranz Linux REPO](https://github.com/halpomeranz/LinuxCmdLine/blob/main/LinuxCmdLine%20-%20AnalystsAndOperators.pdf) |

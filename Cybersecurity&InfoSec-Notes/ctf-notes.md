@@ -104,13 +104,8 @@ Essential for dynamic analysis of networked applications or malware with command
 - Don't trust strings output alone—use `ltrace`, `strace`, or dynamic debugging.
 - Use `tcpdump` or Wireshark to monitor malware network activity.
 
----
 
-> ✍️ *These notes are a summary of key takeaways from the USCC Cyber Camp and ongoing CTF practice sessions.*
-
----
-
-#### 📚 References
+### 📚 References
 
 [CTF Beginner's Guide](https://jaimelightfoot.com/blog/so-you-want-to-ctf-a-beginners-guide/) <br>
 [Static vs Dynamic Analysis](https://rahulsinghinfosec.github.io/hackme/reverse-engineering/static-vs-dynamic-analysis.html) <br>
