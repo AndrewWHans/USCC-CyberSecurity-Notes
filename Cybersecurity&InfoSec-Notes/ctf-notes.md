@@ -1,45 +1,117 @@
-# CTF Spotlight concepts
+# 🔍 CTF Notes: Reverse Engineering & InfoSec Concepts
 
-## About Reverse Engineering
+## 🧠 CTF Spotlight Concepts
 
-**Reverse engineering (RE)**: involve taking a binary and reverse engineering it to determine its functionality (finding a flag)
-> process of dissecting and comprehending the internal mechanisms, architecture, and operation of hardware, software, or systems to expose their design concepts, source code, or architecture. Also used for vulnerability research<br>
-> Example: A reverse engineer will take the final product and pull it apart to figure out what parts were used to make the final product.
-> This process is usually used in malware analysis, like an autopsy or **autopsia**, "To see for one's self"
+### 🔄 About Reverse Engineering
 
-**packing**: malware is compressed & disassembly won't work. Code must be decompressed b4 analysis, some **malware authors** may use multiple packing programs to hide their code/encrypt code itself.<br>
-**code becomes a riddle wrapped in a mystery inside an enigma, and we might not have the key to solve it**
-Reverse engineering something also doesn't mean we can reveal **what that malware does**.
-<br>
+**Reverse engineering (RE)** involves analyzing a binary to determine its functionality (e.g., to find a flag).
 
-### Reverse Engineering Tools and Techniques
+- It is the process of dissecting and understanding the internal mechanisms, architecture, and behavior of hardware, software, or systems.
+- RE can expose design concepts, source code, or vulnerabilities.  
+- Common use case: **vulnerability research**.
 
-IDA, Pro, Ghidra, OllyDbg, Radare2, Wireshark <br>
+> 💡 **Example:** A reverse engineer will take the final product and pull it apart to figure out what parts were used to make the final product.
 
-Here are ***five*** key tools and techniques used in reverse engineering:
+This process is usually involved in malware analysis — like a digital autopsy:  
+**"To see for one's self."**
 
-**Disassemblers**: Software such as IDA Pro, ghdl, and radare2 disassembles a code into assembly language, which helps in the analysis of the higher workings of a program. Here, the role of software documentation is that it contains information about the construction and work of programs.
+---
 
-**Debuggers**: That is why there are OllyDbg and x64dbg, which work mainly for dynamic analysis, as they let you step through the code and setup how the execution is going to go, and they let you inspect and change certain elements located in the memory. This aids in describing the running behavior of a program at runtime.
+### ⚠️ Obstacles in RE
 
-**Hex Editors**: Both Hex Workshop and Hex Fiend resources enable the user to open and view raw binary data in a file. This is good for studying and/or altering the data at the most basic level.
+- **Packing:** Malware may be compressed or packed so disassemblers won't work. Code must often be decompressed first.  
+  Malware authors often use multiple packers to hide/encrypt code.
+  
+- **Obfuscation:** Code might be encrypted, layered, or encoded in a way that makes reverse engineering difficult.  
 
-**Decompilers**: Some of the most popular approaches include the Static Binary Analysis Tool, the use of JEB Decompiler for source code decompiling, and JADX. This enables one to know the outlines of the arrangement of the software without having to tackle assembly language.
+> 🧩 *Reverse engineering doesn't always reveal what the malware does. It's like solving an enigma with a missing key.*
 
-**Network Analyzers**: Examples of the SNM tools include Wireshark, which captures and analyzes network traffic. They are used to capture protocols used by networks and the information passed in between applications, which proves useful in reverse engineering applications that are networked. <br>
-More info @[What is Reverse Engineering Technique in Cybersecurity?](https://www.geeksforgeeks.org/computer-networks/what-is-reverse-engineering-technique-in-cybersecurity/)
+---
 
-Pwn: successfully compromise or gain control over a system, application, or network
-Crypto
-Web
-Forensics/Stego
-Other
+## 🧰 Reverse Engineering Tools and Techniques
 
+### 🛠 Common Tools
 
+- IDA Pro
+- Ghidra
+- OllyDbg
+- Radare2
+- Wireshark
 
+These are **five** key tool categories used in RE:
 
+---
 
-#### References
+### 🔧 Disassemblers
+
+Software like **IDA Pro**, **Ghidra**, and **Radare2** disassemble code into assembly language.  
+This helps analyze the low-level workings of a program.  
+Disassemblers help expose logic and control flow.
+
+---
+
+### 🐞 Debuggers
+
+**OllyDbg** and **x64dbg** are examples of dynamic analysis tools.  
+They let you step through code, inspect memory, and modify runtime behavior.
+
+---
+
+### 🧬 Hex Editors
+
+Tools like **Hex Workshop** and **Hex Fiend** enable you to open and analyze raw binary data.  
+Useful for binary-level data inspection and modification.
+
+---
+
+### 📦 Decompilers
+
+Examples include:
+
+- **JEB Decompiler**
+- **JADX** (for Android)
+- **Static Binary Analysis Tool**
+
+These allow you to recover high-level source code (to a degree) and understand structure without needing to fully reverse binary logic.
+
+---
+
+### 🌐 Network Analyzers
+
+Tools like **Wireshark** capture and inspect network packets.  
+Essential for dynamic analysis of networked applications or malware with command & control (C2) behavior.
+
+🔗 More info: [What is Reverse Engineering in Cybersecurity? – GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-reverse-engineering-technique-in-cybersecurity/)
+
+---
+
+## 📁 CTF Category Index
+
+| Category       | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Pwn**        | Exploiting binaries to gain shell or escalate privileges                    |
+| **Crypto**     | Challenges involving cryptographic algorithms (e.g., RSA, AES, XOR)         |
+| **Web**        | Attacks against web apps (XSS, SQLi, SSRF, etc.)                            |
+| **Forensics**  | File analysis, memory dumps, and steganography                              |
+| **Other**      | Miscellaneous challenges (OSINT, Trivia, Blockchain, etc.)                  |
+
+---
+
+## ✅ Tips from Cyber Camp
+
+- Analyze packed binaries using a debugger + hex editor combo.
+- Always test suspicious binaries in isolated VMs.
+- Don't trust strings output alone—use `ltrace`, `strace`, or dynamic debugging.
+- Use `tcpdump` or Wireshark to monitor malware network activity.
+
+---
+
+> ✍️ *These notes are a summary of key takeaways from the USCC Cyber Camp and ongoing CTF practice sessions.*
+
+---
+
+#### 📚 References
 
 [CTF Beginner's Guide](https://jaimelightfoot.com/blog/so-you-want-to-ctf-a-beginners-guide/) <br>
-[Static vs Dynamic Analysis](https://rahulsinghinfosec.github.io/hackme/reverse-engineering/static-vs-dynamic-analysis.html)
+[Static vs Dynamic Analysis](https://rahulsinghinfosec.github.io/hackme/reverse-engineering/static-vs-dynamic-analysis.html) <br>
+[What is Reverse Engineering in Cybersecurity? – GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-reverse-engineering-technique-in-cybersecurity/)
