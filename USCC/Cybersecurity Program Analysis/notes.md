@@ -5,14 +5,19 @@ Two approaches:
 
 2) Dynamic
 
-# Concepts
+## Concepts
 
 We look for bugs (revolving memory corruption, rounding errors, null pointers, inf loop, etc)
 
-# The SAT Problem
+## The SAT Problem
 
 Lets say we are given a problem or formula that contains binary variables connected to logical relations like *OR* or *AND*.
-The aim is to establish if there is any way to set the variables for that 
+The aim is to establish if there is any way to set the variables for that the formula **evaluates** to be *true*.
+The Algorithms that're applied to this problem are known as *SAT solvers*.
+
+In relevance to machine learning,
+1) machine learning algo's rely on optimization.
+2) machine learning techniques are often used as components of SAT solvers.
 
 
 
