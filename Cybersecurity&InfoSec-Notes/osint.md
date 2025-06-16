@@ -33,6 +33,6 @@ An example from What is OSINT:<br>
 
 
 ### References
-[What is Open-Source Intelligence?](https://www.sans.org/blog/what-is-open-source-intelligence/)
-[What is OSINT](https://www.varonis.com/blog/what-is-osint#:~:text=OSINT%20tactics%20can%20be%20divided,any%20contact%20with%20the%20target.)
-[INTELLIGENCE COLLECTION ACTIVITIES AND DISCIPLINES](https://irp.fas.org/nsa/ioss/threat96/part02.htm#:~:text=Several%20intelligence%20disciplines%20are%20used,open%20source%20intelligence%20(OSINT).)
+[What is Open-Source Intelligence?](https://www.sans.org/blog/what-is-open-source-intelligence/) <br>
+[What is OSINT](https://www.varonis.com/blog/what-is-osint#:~:text=OSINT%20tactics%20can%20be%20divided,any%20contact%20with%20the%20target.) <br>
+[INTELLIGENCE COLLECTION ACTIVITIES AND DISCIPLINES](https://irp.fas.org/nsa/ioss/threat96/part02.htm#:~:text=Several%20intelligence%20disciplines%20are%20used,open%20source%20intelligence%20(OSINT).) <br>
