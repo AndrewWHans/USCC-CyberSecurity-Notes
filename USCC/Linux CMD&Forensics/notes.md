@@ -13,6 +13,6 @@ ls sudoers.d = attacker gateway for root access
 
 ### References
 
-[Linux Forensics and CMD guides](https://github.com/AndrewWHans/linux-forensics-command-guides/tree/main/Linux%26CMDline) | 
-[Hal Pomeranz Linux REPO](https://github.com/halpomeranz/LinuxCmdLine/blob/main/LinuxCmdLine%20-%20AnalystsAndOperators.pdf) |
-[Linux Forensics Cheatsheet](https://fareedfauzi.github.io/2024/03/29/Linux-Forensics-cheatsheet.html)
+[Linux Forensics and CMD guides](https://github.com/AndrewWHans/linux-forensics-command-guides/tree/main/Linux%26CMDline)<br>
+[Hal Pomeranz Linux REPO](https://github.com/halpomeranz/LinuxCmdLine/blob/main/LinuxCmdLine%20-%20AnalystsAndOperators.pdf)<br>
+[Linux Forensics Cheatsheet](https://fareedfauzi.github.io/2024/03/29/Linux-Forensics-cheatsheet.html)<br>
