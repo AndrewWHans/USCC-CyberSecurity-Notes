@@ -19,7 +19,7 @@
 4) Data Privacy
 
 5) Reporting over Retaliating
-> ***To hack back or not?*** relies on *heavily* understanding the particular conditions given, but a certain rule book:
+> ***To hack back or not*** relies on *heavily* understanding the particular conditions given, but a certain rule book:
 
     1) Hacking back is almost always unethical and illegal unless done under very specific, authorized conditions (e.g., government or law enforcement).
     2) Focus should be on evidence collection, containment, and reporting to authorities.
